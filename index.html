@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Snake - Retro Revival</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🐍 AI SNAKE</h1>
+            <p class="subtitle">Classic Game. Modern Intelligence.</p>
+        </header>
+
+        <div class="game-wrapper">
+            <div class="stats-panel">
+                <div class="stat-item">
+                    <span class="stat-label">Score</span>
+                    <span class="stat-value" id="score">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">High Score</span>
+                    <span class="stat-value" id="highScore">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Speed</span>
+                    <span class="stat-value" id="speed">1x</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">AI Level</span>
+                    <span class="stat-value" id="aiLevel">Learning...</span>
+                </div>
+            </div>
+
+            <div class="game-container">
+                <canvas id="gameCanvas" width="600" height="600"></canvas>
+                <div id="gameOverlay" class="overlay hidden">
+                    <div class="overlay-content">
+                        <h2 id="overlayTitle">AI Snake</h2>
+                        <p id="overlayMessage">Press SPACE to start</p>
+                        <div class="controls-info">
+                            <p>🎮 Arrow Keys or WASD to move</p>
+                            <p>🤖 AI adapts to your skill level</p>
+                            <p>👻 Toggle Ghost AI with 'G'</p>
+                        </div>
+                        <button id="startButton" class="btn-primary">Start Game</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ai-panel">
+                <h3>🤖 AI Insights</h3>
+                <div class="ai-stat">
+                    <span>Movement Pattern:</span>
+                    <span id="aiPattern">Analyzing...</span>
+                </div>
+                <div class="ai-stat">
+                    <span>Prediction Accuracy:</span>
+                    <span id="aiAccuracy">0%</span>
+                </div>
+                <div class="ai-stat">
+                    <span>Ghost AI:</span>
+                    <span id="ghostStatus">Disabled</span>
+                </div>
+                <div class="ai-stat">
+                    <span>Food Strategy:</span>
+                    <span id="foodStrategy">Random</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="pauseButton" class="btn-secondary">Pause</button>
+            <button id="restartButton" class="btn-secondary">Restart</button>
+            <button id="ghostToggle" class="btn-secondary">Toggle Ghost AI</button>
+        </div>
+
+        <footer>
+            <p>Week 4 Challenge - Retro Revival 🎮 | Built with AI/ML Intelligence</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.11.0/dist/tf.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

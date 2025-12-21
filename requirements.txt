@@ -1,0 +1,48 @@
+# AI Snake - Retro Revival
+# Requirements and Dependencies
+
+## Browser Requirements
+- Modern web browser with ES6+ support
+- HTML5 Canvas support
+- Local Storage support
+- JavaScript enabled
+
+## Supported Browsers
+- Chrome 80+
+- Firefox 75+
+- Safari 13+
+- Edge 80+
+- Opera 67+
+
+## External Dependencies
+- TensorFlow.js 4.11.0 (loaded via CDN)
+  - Used for machine learning features
+  - Movement prediction neural network
+  - Pattern recognition algorithms
+
+## System Requirements
+
+### Minimum
+- 2GB RAM
+- 1GHz processor
+- 50MB available storage
+- Internet connection (for TensorFlow.js CDN)
+
+### Recommended
+- 4GB RAM
+- 2GHz processor
+- 100MB available storage
+- Stable internet connection
+
+## Development Requirements (if modifying)
+- Text editor or IDE
+- Local web server (for CORS compliance)
+- Modern browser with developer tools
+
+## Optional Enhancements
+- WebGL support (for advanced visual effects)
+- Gamepad API support (for controller input)
+- Web Audio API (for sound effects)
+
+## No Installation Required
+This is a pure web application that runs directly in the browser without any installation or setup process.
