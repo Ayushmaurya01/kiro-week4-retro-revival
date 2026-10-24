@@ -151,6 +151,20 @@ The AI classifies your playing style:
 **Built for Week 4 Challenge - Retro Revival** 🎮  
 *Classic gameplay meets modern intelligence*
 
+## 👻 How the Ghost Snake AI Works
+
+The optional Ghost Snake is an AI-controlled opponent that makes decisions using a heuristic scoring system.
+
+- **Food seeking:** It favors moves that bring it closer to the food.
+- **Collision avoidance:** It avoids walls, its own body, and moves that reverse its current direction.
+- **Player awareness:** It penalizes moves that bring it too close to the player's snake.
+- **Smooth movement:** It slightly favors continuing in its current direction.
+- **Edge awareness:** It prefers positions farther from the edges of the board.
+
+The Ghost Snake evaluates its valid moves, scores them, and chooses the move with the highest score. It moves more slowly than the player snake to create a different gameplay challenge.
+
+**Tip:** Use the `G` key or the Ghost AI toggle button to enable or disable the opponent.
+
 
 ## 🏆 Project Maintenance
 
